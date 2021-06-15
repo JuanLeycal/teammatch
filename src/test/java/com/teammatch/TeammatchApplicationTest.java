@@ -7,8 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"},features = {"classpath:features/"},
-        glue = {"com.teammatch"})
+@CucumberOptions(features = {"classpath:features/"},
+        glue = {"com.teammatch"},plugin = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"})
 
 public class TeammatchApplicationTest {
 
