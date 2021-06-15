@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>ExecuteAutomation</td>
+                          <td>1</td>
+                        <td>15 Jun 2021, 23:35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">com.teammatch.AddGameToList.iGoToAddGame()</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.AddGameToList.iHaveOpeningListSizeGamesInMyList(int)</td>
+                <td>3</td>
+                <td class="duration" data-value="2000000">002ms</td>
+                <td class="duration" data-value="666666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.AddGameToList.iWantToAddNewGameToMyGames(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.AddGameToList.myGameListShouldHaveListSizeGames(int)</td>
+                <td>3</td>
+                <td class="duration" data-value="3000000">003ms</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.aFoundPlayerHasMatchingNumberOfFilters(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.iEnterFiltersNumberOfFilters(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="166666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.iHaveAmRegistered(java.lang.String)</td>
+                <td>6</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="166666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.myFoundPlayersListShouldBeFinalSize(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="2000000">002ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.myInitialFoundPlayersListLengthIsInitialSize(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ApplyFilters.myLoginStateIs(java.lang.String)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.CreateTeam.iAmARegisteredUser(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.CreateTeam.iEnterTeamAndGameInformation()</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.CreateTeam.iHaveLoggedIn(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="200000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.CreateTeam.iHaveTeamsTeams(int)</td>
+                <td>5</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="200000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.CreateTeam.iShouldHaveNewTeams(int)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.EditProfile.iGoToEditProfile()</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.EditProfile.iWantToModifyItToNewUsername(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.EditProfile.myUsernameIsOpeningUsername(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.EditProfile.myUsernameShouldBeUsername(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.LoginPlayer.iGoToLogInAsAPlayerWithPasswordPassword(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.LoginPlayer.iGoToLogInAsAPlayerWithUsernameUsername(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.LoginPlayer.iHaveRegisteredExistingAccountWithRegisteredUsernameAndWithRegisteredPassword(boolean,java.lang.String,java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.LoginPlayer.iShouldSeeLogInResponseResponseScreen(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.RegisterPlayer.iGoToRegisterAsAPlayerWithUsername(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.RegisterPlayer.iHaveRegisteredExistingAccount(boolean)</td>
+                <td>5</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="200000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.RegisterPlayer.iShouldSeeRegisteredUsernameMyUsername(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.RegisterPlayer.iShouldSeeResponseResponseScreen(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SearchPlayer.iAmALogged(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="2000000">002ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SearchPlayer.iHaveAnIncompleteTeamWithMembers(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SearchPlayer.iNeedATotalOfMembers(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="166666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SearchPlayer.iSearchForTeamMembers(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SearchPlayer.iWouldHaveMyTeamComplete()</td>
+                <td>6</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="166666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iHaveLoggedInWithAnUsername(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iHaveRegisterAccountRegistered(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iHaveRegisteredF_amountFilters(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iSeeATeamThatInterestMe(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iSelectTheOptionOfSearchTeams()</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iSelectTheTeamThatIWantToSeeDetailsAbout()</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamDetails.iShouldBeAbleToSeeDetailsOfTheTeam(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iHaveInputtedF_amountFilters(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iHaveMyAccountUsernameLoggedIn(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iHaveRegisterAccountRegistered(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iSearchForTeams()</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iSeeATeamThatCaughtMyAttention(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SeeTeamSummary.iShouldBeAbleToSeeASummaryOfTheTeam(java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SendMessage.iHaveMadeTheSearchForPlayersAccordingToTheFiltersSelected()</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SendMessage.iSelectAPlayerUsernameThatCouldCompleteMyTeamAndBeMyNewFriend(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SendMessage.iSendToPlayerUsernameAMessageThatSaysMessage(java.lang.String,java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SendMessage.imARegisteredUser(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.SendMessage.iveLoggedIn(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="200000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileDetails.iAmARegisteredUser(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileDetails.iHaveLoggedIn(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="200000">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileDetails.iHaveMadeTheSearchForPlayersAccordingToMyFilters()</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileDetails.iSeePlayerUsernameIsProfileDetails(java.lang.String,java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileDetails.iSelectAPlayerUsernameThatCouldCompleteMyTeam(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileSummary.iAmLoggedIn(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="2000000">002ms</td>
+                <td class="duration" data-value="333333">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileSummary.iAmRegisteredUser(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileSummary.iClickFillMyTeam(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="1000000">001ms</td>
+                <td class="duration" data-value="166666">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileSummary.iHaveSelectedTheFilters()</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">com.teammatch.ViewPlayerProfileSummary.iSeeAListOfProfileSummaries(int)</td>
+                <td>6</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>60</td>
+              <td>274</td>
+              <td class="duration">026ms</td>
+              <td class="duration">000ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
