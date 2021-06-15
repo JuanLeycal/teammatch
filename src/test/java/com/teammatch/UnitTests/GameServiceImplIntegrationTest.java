@@ -1,6 +1,5 @@
-package com.teammatch.UnitTests;
+/*package com.teammatch.UnitTests;
 
-import com.teammatch.TeammatchApplicationTests;
 import com.teammatch.exception.ResourceNotFoundException;
 import com.teammatch.model.Game;
 import com.teammatch.repository.GameRepository;
@@ -60,3 +59,4 @@ public class GameServiceImplIntegrationTest extends TeammatchApplicationTests {
     }
 
 }
+*/
