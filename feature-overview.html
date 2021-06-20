@@ -51,7 +51,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                274,
+                378,
                 0,
                 0,
                 0,
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 274) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 378) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                55,
+                78,
                 0
             ],
             backgroundColor: [
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 55) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 78) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,7 +157,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   12,
+                   18,
                    0
                ],
                backgroundColor: [
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 18) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>ExecuteAutomation</td>
                           <td>1</td>
-                        <td>20 Jun 2021, 19:50</td>
+                        <td>20 Jun 2021, 23:48</td>
           </tr>
         </tbody>
       </table>
@@ -334,7 +334,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
-        <td class="duration" data-value="6000000">006ms</td>
+        <td class="duration" data-value="5000000">005ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -349,7 +349,22 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">36</td>
-        <td class="duration" data-value="5000000">005ms</td>
+        <td class="duration" data-value="2000000">002ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--ClaimBattlePassRewards-feature.html">Claim Battle Pass Rewards</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td      class="passed"    >15</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
+        <td class="duration" data-value="0">000ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -364,7 +379,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">25</td>
-        <td class="duration" data-value="2000000">002ms</td>
+        <td class="duration" data-value="1000000">001ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -380,6 +395,51 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">12</td>
         <td class="duration" data-value="2000000">002ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--FindATeam-feature.html">Find a Team</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td      class="passed"    >15</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
+        <td class="duration" data-value="0">000ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--InviteNewUsers-feature.html">Invite New Users</a></td>
+        
+        <td  class="passed"    >6</td>
+        <td >0</td>
+        <td class="total">6</td>
+        <td      class="passed"    >21</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">21</td>
+        <td class="duration" data-value="5000000">005ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--LevelUpAccount-feature.html">Level up an account</a></td>
+        
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td      class="passed"    >20</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
+        <td class="duration" data-value="0">000ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -439,7 +499,37 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">18</td>
+        <td class="duration" data-value="1000000">001ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--SeeUsetimeMetrics-feature.html">See Usetime Metrics</a></td>
+        
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
         <td class="duration" data-value="2000000">002ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="classpath-features--SeeVideogameRecomendations-feature.html">See Videogame Recomendations</a></td>
+        
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+        <td      class="passed"    >25</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">25</td>
+        <td class="duration" data-value="1000000">001ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -454,7 +544,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">21</td>
-        <td class="duration" data-value="1000000">001ms</td>
+        <td class="duration" data-value="0">000ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -469,7 +559,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">25</td>
-        <td class="duration" data-value="2000000">002ms</td>
+        <td class="duration" data-value="1000000">001ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -484,7 +574,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">25</td>
-        <td class="duration" data-value="2000000">002ms</td>
+        <td class="duration" data-value="1000000">001ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -499,23 +589,23 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">30</td>
-        <td class="duration" data-value="0">000ms</td>
+        <td class="duration" data-value="1000000">001ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>12</td>
-            <td>55</td>
+      <td>18</td>
+            <td>78</td>
       <td>0</td>
-      <td>55</td>
-      <td>274</td>
-      <td>0</td>
-      <td>0</td>
+      <td>78</td>
+      <td>378</td>
       <td>0</td>
       <td>0</td>
-      <td>274</td>
+      <td>0</td>
+      <td>0</td>
+      <td>378</td>
       <td class="duration">026ms</td>
       <td></td>
     </tr>
